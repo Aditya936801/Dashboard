@@ -1,0 +1,22 @@
+.children-wrapper{
+    flex-grow: 1;
+    padding: 24px;
+    min-height: 100vh;
+    height: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+    .children-wrapper{
+        padding: 10px ;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .children-wrapper{
+        padding: 20px ;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .children-wrapper{
+        padding: 15px ;
+    }
+  }

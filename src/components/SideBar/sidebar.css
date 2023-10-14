@@ -1,0 +1,14 @@
+.sidebar-selected .MuiButtonBase-root {
+    background-color: antiquewhite;
+    
+    &:hover{
+    background-color:rgb(248, 213, 168);
+    
+
+    }
+}
+.side-bar .MuiButtonBase-root{
+    border-radius: 7px;
+    
+}
+

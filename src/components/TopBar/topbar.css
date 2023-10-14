@@ -1,0 +1,60 @@
+:root {
+    --primary: rgba(240, 248, 255, 0.727);
+}
+
+.top-bar-wrapper {
+    box-shadow: none !important;
+}
+
+.search-bar .MuiInputBase-input {
+    padding: 7px 2px;
+    color: var(--primary);
+    &::placeholder {
+        color: var(--primary);
+    }
+}
+
+.search-bar .MuiOutlinedInput-notchedOutline {
+    border-color: var(--primary);
+    border-width: 2px;
+   
+}
+
+.search-bar .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: var(--primary);
+    
+}
+.search-bar .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: var(--primary);
+}
+
+.search-bar-icon {
+    color: var(--primary);
+}
+
+@media only screen and (max-width: 720px) {
+    .search-bar .MuiInputBase-root {
+        width: 180px;
+    }
+    .top-bar-wrapper .MuiToolbar-root {
+        padding-left: 10px ;
+        padding-right: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .top-bar-wrapper .MuiToolbar-root {
+        padding-left: 20px ;
+        padding-right: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .search-bar .MuiInputBase-root {
+        width: 130px;
+    }
+    .top-bar-wrapper .MuiToolbar-root {
+        padding-left: 15px ;
+        padding-right: 15px;
+    }
+  }
