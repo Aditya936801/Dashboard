@@ -1,0 +1,74 @@
+:root {
+    --primary: rgba(240, 248, 255, 0.727);
+    --secondary: #141b2d;
+}
+.top-search-bar .MuiInputBase-input {
+    padding: 7px 2px;
+    color: var(--primary)
+}
+
+
+.top-search-bar .MuiOutlinedInput-notchedOutline {
+    border-color: var(--primary);
+    border-width: 2px;
+   
+}
+
+.top-search-bar .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: var(--primary);
+    
+}
+.top-search-bar .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: var(--primary);
+}
+
+.top-search-bar .icon {
+    color: var(--primary);
+}
+
+.table-search-bar .MuiInputBase-input {
+    padding: 4px 2px;
+    width: 150px ;
+    color: var(--secondary);
+}
+
+.table-search-bar .MuiOutlinedInput-notchedOutline {
+    border-color: var(--secondary);
+    border-width: 2px;
+   
+}
+
+.table-search-bar .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: var(--secondary);
+    
+}
+.table-search-bar .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: var(--secondary);
+}
+
+.table-search-bar .icon {
+    color: var(--secondary);
+}
+
+
+
+@media only screen and (max-width: 720px) {
+    .top-search-bar .MuiInputBase-root {
+        width: 180px;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 450px) {
+    .top-search-bar .MuiInputBase-root {
+        width: 130px;
+    }
+    .table-search-bar .MuiInputBase-root {
+        width: 130px;
+    }
+
+  }
+
+
+

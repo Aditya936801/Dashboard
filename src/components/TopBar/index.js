@@ -2,7 +2,7 @@ import { AppBar, Toolbar, IconButton, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import WavingHandIcon from "@mui/icons-material/WavingHand";
 import { Box } from "@mui/material";
-import SearchBar from "./miniComponent/SearchBar";
+import SearchBar from "../SearchBar";
 import "./topbar.css"
 
 const TopBar = ({ name, drawerWidth,handleDrawerToggle }) => {
@@ -36,7 +36,7 @@ const TopBar = ({ name, drawerWidth,handleDrawerToggle }) => {
             <Typography variant="h4">Hello {name}</Typography>
             <WavingHandIcon fontSize="small" color="secondary" />
           </Box>
-          <SearchBar />
+          <SearchBar Appbar={true} />
         </Box>
       </Toolbar>
     </AppBar>

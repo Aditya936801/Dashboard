@@ -1,7 +1,7 @@
 import "./App.css";
 import { CssBaseline, ThemeProvider, Toolbar, Box } from "@mui/material";
 import { themes } from "./theme";
-import Sample from "./components/Sample";
+import Dashboard from "./scenes/Dashboard";
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <ThemeProvider theme={themes}>
         <CssBaseline />
 
-        <Sample/>
+        <Dashboard/>
       </ThemeProvider>
     </div>
   );

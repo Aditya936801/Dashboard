@@ -1,0 +1,24 @@
+.dashboard-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+
+.dash-board-graphs{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    
+}
+
+@media only screen and (max-width: 990px) {
+    
+.dash-board-graphs{
+    flex-direction: column;
+    gap: 30px;
+    
+}
+  
+  }

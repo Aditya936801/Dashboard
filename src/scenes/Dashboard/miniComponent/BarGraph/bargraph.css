@@ -1,0 +1,18 @@
+.bar-graph-wrapper{
+    width: 55%;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 990px) {
+    .bar-graph-wrapper{
+        width: 100%;
+      
+    }
+    
+ 
+      }

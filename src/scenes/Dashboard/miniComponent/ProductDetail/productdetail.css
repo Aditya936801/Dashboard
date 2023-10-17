@@ -1,0 +1,31 @@
+.product-detail-wrapper{
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+.product-detail-select .MuiSelect-select{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 600;
+    outline: auto;
+    outline-color: var(--secondary);
+    
+}
+.product-detail-select .MuiSelect-select:focus{
+    outline: auto;
+    
+    outline-color: var(--secondary) !important;
+    
+}
+.product-detail-select .MuiSelect-icon{
+    color: var(--secondary);
+    
+}
+.product-detail-select .MuiInputBase fieldset{
+    color: var(--secondary);
+    
+}

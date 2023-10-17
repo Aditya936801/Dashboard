@@ -1,17 +1,18 @@
 import { TextField,InputAdornment } from "@mui/material"
 import SearchIcon from '@mui/icons-material/Search';
-import "../topbar.css"
-const SearchBar = () => {
+import "./searchbar.css"
+const SearchBar = ({Appbar=false}) => {
+  const Class_Name = Appbar?"top-search-bar":"table-search-bar"
   return (
     <TextField
     id="input-with-icon-textfield"
-    className="search-bar"
+    className={Class_Name}
     placeholder="Search"
     InputProps={{
 
       startAdornment: (
         <InputAdornment position="start" >
-          <SearchIcon className="search-bar-icon" />
+          <SearchIcon className={Class_Name+" icon"}  />
         </InputAdornment>
       ),
     
