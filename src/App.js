@@ -1,5 +1,5 @@
 import "./App.css";
-import { CssBaseline, ThemeProvider, Toolbar, Box } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import { themes } from "./theme";
 import Dashboard from "./scenes/Dashboard";
 
