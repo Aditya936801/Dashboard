@@ -1,7 +1,7 @@
 .fundCategory-wrapper{
     padding: 20px 10px ;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
     background-color: #fcfcfc;

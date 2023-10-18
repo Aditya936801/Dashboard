@@ -5,6 +5,10 @@
     flex-direction: column;
     padding: 15px 20px;
 }
+.product-heading{
+    font-size: 25px;
+    font-weight: 900;
+}
 .product-detail-select .MuiSelect-select{
     padding-top: 4px;
     padding-bottom: 4px;
@@ -17,7 +21,6 @@
 }
 .product-detail-select .MuiSelect-select:focus{
     outline: auto;
-    
     outline-color: var(--secondary) !important;
     
 }
@@ -29,3 +32,26 @@
     color: var(--secondary);
     
 }
+
+@media only screen and (min-width:720px) and (max-width: 820px) {
+  
+
+    .product-detail-select .MuiSelect-select{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .product-detail-wrapper{
+        padding: 15px ;
+    }
+
+  }
+@media only screen and (min-width:600px) and (max-width: 720px) {
+  
+    .product-heading{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+   
+
+  }

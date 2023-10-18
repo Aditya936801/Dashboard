@@ -7,22 +7,21 @@ import { useState } from 'react'
 
 const Layout = ({children}) => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const drawerWidth = 220
-  const name = "Aditya"
-  const designation = "Project Manager"
+  
+ 
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
   return (
     <Box display="flex" >
-    <TopBar handleDrawerToggle={handleDrawerToggle} drawerWidth={drawerWidth} name={name} />
-    <SideBar drawerWidth={drawerWidth} name={name} designation={designation} mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle} />
+    <TopBar handleDrawerToggle={handleDrawerToggle}   />
+    <SideBar mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle} />
     <Box
         component="main"
         className='children-wrapper'
         bgcolor= {colors.primary[500]}
-        sx={{ width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+      
       >
       <Toolbar/>
       

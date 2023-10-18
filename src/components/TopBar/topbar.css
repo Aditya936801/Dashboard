@@ -2,6 +2,7 @@
 
 .top-bar-wrapper {
     box-shadow: none !important;
+    padding-right: 0 !important;
 }
 
 
@@ -17,6 +18,16 @@
     .top-bar-wrapper .MuiToolbar-root {
         padding-left: 20px ;
         padding-right: 20px;
+    }
+   
+  }
+
+  @media only screen and (min-width: 600px) {
+ 
+    .top-bar-wrapper  {
+      width: calc(100% - var(--drawerWidth)) !important;
+       
+       margin-left: var(--drawerWidth);
     }
   }
 

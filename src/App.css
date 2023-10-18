@@ -5,7 +5,8 @@
     box-sizing: border-box;
     font-family: 'Source Sans 3', 'sans-serif';
 }
-.app {
-  
+
+::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 

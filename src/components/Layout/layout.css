@@ -1,3 +1,8 @@
+:root {
+    --drawerWidth:220px;
+   
+}
+
 .children-wrapper{
     flex-grow: 1;
     padding: 24px;
@@ -8,5 +13,10 @@
 @media only screen and (max-width: 720px) {
     .children-wrapper{
         padding: 15px 25px ;
+    }
+  }
+@media only screen and (min-width: 600px) {
+    .children-wrapper{
+        width: calc(100% - var(--drawerWidth));
     }
   }

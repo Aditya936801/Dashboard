@@ -1,7 +1,7 @@
 import dollar from "../../images/dollar.png";
 import order from "../../images/order.png"
 import sales from "../../images/sales.png"
-import balance from "../../images/balance.png"
+import balance from "../../images/balance.jpeg"
 export const FUND_DATA = [
     {
         title:"Earning",

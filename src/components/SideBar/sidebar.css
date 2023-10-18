@@ -12,3 +12,33 @@
     
 }
 
+.sidebar-drawer{
+    & .MuiDrawer-paper{
+        box-sizing: border-box;
+        width: var(--drawerWidth);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+   .sidebar-wrapper{
+    flex-shrink: 0;
+    width: var(--drawerWidth);
+   }
+
+   .permanent-drawer{
+    display: block;
+   }
+   .temporary-drawer{
+    display: none;
+   }
+  }
+@media only screen and (max-width: 600px) {
+ 
+
+   .permanent-drawer{
+    display: none;
+   }
+   .temporary-drawer{
+    display: block;
+   }
+  }

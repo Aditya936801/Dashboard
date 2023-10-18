@@ -3,6 +3,7 @@
     flex-direction: column;
     margin-top: 20px;
     overflow-x: scroll;
+    gap: 15px;
 
 }
 
@@ -16,20 +17,31 @@
 
 .table-basis-60{
     flex-basis: 60%;
+    min-width: 400px;
 }
 .table-basis-12{
     flex-basis: 12%;
+    min-width: 70px;
 
 }
 .table-basis-16{
     flex-basis: 16%;
-    text-align: right;
+    text-align: center;
+    min-width: 100px;
 
 }
 
-.custom-table-divider{
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-    margin-left: -4% !important;
-    margin-right: -4% !important;
+
+
+
+.table-product-wrapper{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.product-image{
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
 }

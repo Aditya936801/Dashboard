@@ -4,15 +4,14 @@ import WavingHandIcon from "@mui/icons-material/WavingHand";
 import { Box } from "@mui/material";
 import SearchBar from "../SearchBar";
 import "./topbar.css"
+import { NAME } from "../../GlobalConstants/UserDetail";
 
-const TopBar = ({ name, drawerWidth,handleDrawerToggle }) => {
+const TopBar = ({ handleDrawerToggle }) => {
+
   return (
     <AppBar
       position="fixed"
-      sx={{
-        width: { sm: `calc(100% - ${drawerWidth}px)` },
-        ml: { sm: `${drawerWidth}px` },
-      }}
+      
       className="top-bar-wrapper"
     >
       <Toolbar>
@@ -33,7 +32,7 @@ const TopBar = ({ name, drawerWidth,handleDrawerToggle }) => {
           
         >
           <Box display="flex" gap="5px" alignItems="center">
-            <Typography variant="h4">Hello {name}</Typography>
+            <Typography variant="h4">Hello {NAME}</Typography>
             <WavingHandIcon fontSize="small" color="secondary" />
           </Box>
           <SearchBar Appbar={true} />

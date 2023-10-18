@@ -15,8 +15,10 @@ import { useState } from "react";
 import "../sidebar.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { colors } from "../../../theme";
+import { NAME ,DESIGNATION} from "../../../GlobalConstants/UserDetail";
 
-const CustomDrawer = ({ name,designation }) => {
+
+const CustomDrawer = () => {
   const [active, setActive] = useState("Dashboard");
 
 
@@ -70,11 +72,11 @@ const CustomDrawer = ({ name,designation }) => {
       </div>
       <Box display="flex" justifyContent="space-around" alignItems="center" bgcolor="antiquewhite" borderRadius="6px" margin="0 -10px" padding="8px">
         <Box display="flex" gap="10px">
-          <Avatar sx={{bgcolor:colors.primary[500]}}>{name[0]}</Avatar>
+          <Avatar sx={{bgcolor:colors.primary[500]}}>{NAME[0]}</Avatar>
           <Box display="flex" flexDirection="column">
-            <Typography variant="h5">{name}</Typography>
+            <Typography variant="h5">{NAME}</Typography>
             <Box textTransform="uppercase" fontWeight="200" color={colors.primary[500]}>
-              {designation}
+              {DESIGNATION}
             </Box>
           </Box>
         </Box>

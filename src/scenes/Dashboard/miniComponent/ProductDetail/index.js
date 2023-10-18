@@ -8,9 +8,9 @@ const ProductDetail = () => {
   return (
     <div className="product-detail-wrapper">
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Box fontSize="25px" fontWeight="900">
+        <div className="product-heading" >
           Product Sell
-        </Box>
+        </div>
         <Box display="flex" gap="10px">
           <SearchBar />
           <FormControl size="small">
